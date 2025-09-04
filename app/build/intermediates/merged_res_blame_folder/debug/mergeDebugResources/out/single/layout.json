@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_todo.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_todo.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_done.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_done.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_register.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "com.pedro.task.app-mergeDebugResources-45:/layout/fragment_form_task.xml",
+        "source": "com.pedro.task.app-main-48:/layout/fragment_form_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\item_task.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\item_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\bottom_sheet.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_doing.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_doing.xml"
+    },
+    {
+        "merged": "com.pedro.task.app-mergeDebugResources-45:/layout/fragment_splash.xml",
+        "source": "com.pedro.task.app-main-48:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_recover_account.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_recover_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_form_task.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_form_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-mergeDebugResources-45:\\layout\\fragment_splash.xml",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_splash.xml"
+    }
+]

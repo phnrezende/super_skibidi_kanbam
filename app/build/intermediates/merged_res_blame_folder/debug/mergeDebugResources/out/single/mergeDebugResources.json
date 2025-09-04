@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_ic_outline_anchor_24.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\ic_outline_anchor_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "com.pedro.task.app-debug-46:/layout_fragment_form_task.xml.flat",
+        "source": "com.pedro.task.app-main-48:/layout/fragment_form_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_bg_bottom_sheet.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\bg_bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.pedro.task.app-debug-46:/layout_fragment_splash.xml.flat",
+        "source": "com.pedro.task.app-main-48:/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.pedro.task.app-debug-46:/drawable_peixe.xml.flat",
+        "source": "com.pedro.task.app-main-48:/drawable/peixe.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_splash.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_baseline_logout_24.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\baseline_logout_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_item_task.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\item_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_recover_account.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_recover_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_done.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_done.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_bg_edittext.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\bg_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_outline_arrow_forward_ios_24.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\outline_arrow_forward_ios_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_bottom_sheet.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\bottom_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_form_task.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_form_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_bg_btn.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\bg_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_outline_arrow_back_ios_new_24.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\outline_arrow_back_ios_new_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\navigation_main_graph.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\navigation\\main_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_todo.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_todo.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_doing.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_doing.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\layout_fragment_register.xml.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\layout\\fragment_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-debug-46:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\phnre\\.gradle\\daemon\\8.11.1\\com.pedro.task.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
+    }
+]
