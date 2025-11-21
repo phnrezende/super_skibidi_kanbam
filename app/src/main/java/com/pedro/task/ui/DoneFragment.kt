@@ -6,13 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isVisible
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
+import com.google.firebase.database.*
 import com.pedro.task.R
 import com.pedro.task.data.model.Status
 import com.pedro.task.data.model.Task
 import com.pedro.task.databinding.FragmentDoneBinding
 import com.pedro.task.ui.adapter.TaskAdapter
+import com.pedro.task.util.showBottomSheet
 
 class DoneFragment : Fragment() {
 
@@ -20,63 +27,164 @@ class DoneFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var taskAdapter: TaskAdapter
+    private lateinit var reference: DatabaseReference
+    private lateinit var auth: FirebaseAuth
+    private val viewModel: TaskViewModel by activityViewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDoneBinding.inflate(inflater,container,false)
+        _binding = FragmentDoneBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        reference = Firebase.database.reference
+        auth = Firebase.auth
+
         initListeners()
-        initRecyclerViewTask(getTask())
+        initRecyclerViewTask()
+        getTask()
     }
 
-    private fun initListeners(){
+    private fun initListeners() {
         binding.floatingActionButton2.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_formTaskFragment)
+            val action = HomeFragmentDirections
+                .actionHomeFragmentToFormTaskFragment(null, "done")
+            findNavController().navigate(action)
+        }
+
+        observerViewModel()
+    }
+
+    private fun observerViewModel() {
+        viewModel.taskList.observe(viewLifecycleOwner) { fullList ->
+            val filtered = fullList.filter { it.status == Status.DONE }
+            taskAdapter.submitList(filtered)
+            listEmpty(filtered)
         }
     }
 
-    private fun initRecyclerViewTask(taskList: List<Task>){
-        taskAdapter = TaskAdapter(requireContext(), taskList) {task, option -> optionSelected(task,option)}
+    private fun initRecyclerViewTask() {
+        taskAdapter = TaskAdapter(requireContext()) { task, option ->
+            optionSelected(task, option)
+        }
+
         binding.recyclerViewTask.layoutManager = LinearLayoutManager(requireContext())
-        binding.recyclerViewTask.setHasFixedSize(true)
         binding.recyclerViewTask.adapter = taskAdapter
     }
 
-    private fun optionSelected(task:Task, option: Int){
-        when (option){
+    private fun optionSelected(task: Task, option: Int) {
+        when (option) {
             TaskAdapter.SELECT_REMOVER -> {
-                Toast.makeText(requireContext(), "Removendo ${task.description}", Toast.LENGTH_SHORT).show()
+                showBottomSheet(
+                    titleDialog = R.string.text_title_dialog_delete,
+                    message = getString(R.string.text_message_dialog_delete),
+                    titleButton = R.string.text_button_dialog_confirm
+                ) {
+                    deleteTask(task)
+                }
             }
+
             TaskAdapter.SELECT_EDIT -> {
-                Toast.makeText(requireContext(), "Editando ${task.description}", Toast.LENGTH_SHORT).show()
+                val action = HomeFragmentDirections.actionHomeFragmentToFormTaskFragment(task)
+                findNavController().navigate(action)
             }
+
             TaskAdapter.SELECT_DETAILS -> {
                 Toast.makeText(requireContext(), "Detalhes ${task.description}", Toast.LENGTH_SHORT).show()
             }
+
             TaskAdapter.SELECT_BACK -> {
-                Toast.makeText(requireContext(), "Anterior", Toast.LENGTH_SHORT).show()
+                moveTaskToPreviousStatus(task)  // Mover para DOING
+            }
+
+            TaskAdapter.SELECT_NEXT -> {
+                moveTaskToNextStatus(task)  // Mover para TODO
             }
         }
     }
 
-    private fun getTask() = listOf(
-        Task("0", "Adicionar funcionalidade de backup de dados na nuvem", Status.DONE),
-        Task("1","Integrar sistema de feedback de usuários", Status.DONE),
-        Task("2","Criar tela de tutorial inicial para novos usuários", Status.DONE),
-        Task("3", "Criar fluxo de recuperação de senha", Status.DONE),
-        Task("4","Desenvolver tela de histórico de atividades", Status.DONE),
-    )
+    private fun moveTaskToNextStatus(task: Task) {
+        // Lógica de mover para o próximo status na sequência: TODO -> DOING -> DONE -> TODO
+        val nextStatus = when (task.status) {
+            Status.TODO -> Status.DOING
+            Status.DOING -> Status.DONE
+            Status.DONE -> Status.TODO  // Voltar para TODO
+        }
+
+        updateTaskStatus(task, nextStatus)
+    }
+
+    private fun moveTaskToPreviousStatus(task: Task) {
+        // Lógica de mover para o status anterior na sequência: TODO <- DOING <- DONE <- TODO
+        val previousStatus = when (task.status) {
+            Status.TODO -> Status.DONE
+            Status.DOING -> Status.TODO
+            Status.DONE -> Status.DOING  // Voltar para DOING
+        }
+
+        updateTaskStatus(task, previousStatus)
+    }
+
+    private fun updateTaskStatus(task: Task, status: Status) {
+        reference
+            .child("task")
+            .child(auth.currentUser!!.uid)
+            .child(task.id)
+            .child("status")
+            .setValue(status)
+            .addOnSuccessListener {
+                // Exibir mensagem de sucesso
+                Toast.makeText(requireContext(), "Movido para ${status.name.capitalize()}", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                // Exibir mensagem de erro
+                Toast.makeText(requireContext(), "Erro ao atualizar o status", Toast.LENGTH_SHORT).show()
+            }
+    }
+
+    private fun deleteTask(task: Task) {
+        reference.child("task")
+            .child(auth.currentUser!!.uid)
+            .child(task.id)
+            .removeValue()
+    }
+
+    private fun getTask() {
+        reference.child("task")
+            .child(auth.currentUser!!.uid)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val list = mutableListOf<Task>()
+
+                    for (ds in snapshot.children) {
+                        val task = ds.getValue(Task::class.java)
+                        if (task != null) list.add(task)
+                    }
+
+                    binding.progressBar.isVisible = false
+                    list.reverse()
+                    viewModel.setAllTasks(list)
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    Toast.makeText(requireContext(), "Erro ao carregar", Toast.LENGTH_SHORT).show()
+                }
+            })
+    }
+
+    private fun listEmpty(list: List<Task>) {
+        binding.textInfo.text = if (list.isEmpty()) {
+            getString(R.string.text_list_task_empty)
+        } else ""
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
 }

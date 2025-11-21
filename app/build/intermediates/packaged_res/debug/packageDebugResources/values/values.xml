@@ -16,8 +16,14 @@
     <string name="email_empty">Preencha seu email!</string>
     <string name="email_empty_register_fragment">Preencha um e-mail válido.</string>
     <string name="email_text">E-mail</string>
+    <string name="error_generic">Erro</string>
     <string name="fazendo_radiobutton">Fazendo</string>
     <string name="feita_radiobutton">Feita</string>
+    <string name="gcm_defaultSenderId" translatable="false">300189403096</string>
+    <string name="google_api_key" translatable="false">AIzaSyCwBrugY_EBlZbH_cu0vSJWv0Fa7bEdJb0</string>
+    <string name="google_app_id" translatable="false">1:300189403096:android:dca8b5bf9a76f5289054ad</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCwBrugY_EBlZbH_cu0vSJWv0Fa7bEdJb0</string>
+    <string name="google_storage_bucket" translatable="false">taskapp-cfac9.firebasestorage.app</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hint_edit_description">Informe sua nova tarefa</string>
     <string name="hint_edit_email">Digite seu e-mail</string>
@@ -25,9 +31,12 @@
     <string name="passord_text">Senha</string>
     <string name="password_empty">Preencha a senha!</string>
     <string name="password_empty_register_gragment">Preencha uma senha.</string>
+    <string name="project_id" translatable="false">taskapp-cfac9</string>
     <string name="status_task_doing">Fazendo</string>
     <string name="status_task_done">Feitas</string>
     <string name="status_task_todo">A Fazer</string>
+    <string name="text_button_dialog_confirm">Excluir</string>
+    <string name="text_button_dialog_confirm_logout">Sair</string>
     <string name="text_button_formtask_fragment">Salvar</string>
     <string name="text_button_recover_account_fragment">Enviar</string>
     <string name="text_button_recover_login_fragment">Recuperar conta</string>
@@ -35,8 +44,16 @@
     <string name="text_button_register_login_fragment">Criar conta</string>
     <string name="text_button_registeraccount_fragment">Criar conta</string>
     <string name="text_button_warning">Entendi</string>
+    <string name="text_delete_success_task">Tarefa excluída</string>
     <string name="text_info_recover_account_fragment">Informe seu email de cadastro para receber \n um link para alteração de senha.</string>
+    <string name="text_list_task_empty">Nenhuma tarefa cadastrada!</string>
+    <string name="text_list_task_load">Aguarde...</string>
+    <string name="text_message_dialog_confirm_logout">Tem certeza que deseja sair?</string>
+    <string name="text_message_dialog_delete">Deseja mesmo excluir a tarefa?</string>
+    <string name="text_save_sucess_form_task_fragment">Tarefa salva com sucesso!</string>
     <string name="text_tile_warning">Atenção</string>
+    <string name="text_title_dialog_confirm_logout">Confirmação</string>
+    <string name="text_title_dialog_delete">Excluir tarefa</string>
     <string name="text_title_login_fragment">Login</string>
     <string name="text_title_toolbar_recover_account_fragment">Recuperar conta</string>
     <string name="text_title_toolbar_register_fragment">Criar conta</string>

@@ -4,6 +4,9 @@ package com.pedro.task.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,13 +27,27 @@ public final class FragmentDoneBinding implements ViewBinding {
   public final FloatingActionButton floatingActionButton2;
 
   @NonNull
+  public final LinearLayout loadingContainer;
+
+  @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
   public final RecyclerView recyclerViewTask;
 
+  @NonNull
+  public final TextView textInfo;
+
   private FragmentDoneBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton floatingActionButton2, @NonNull RecyclerView recyclerViewTask) {
+      @NonNull FloatingActionButton floatingActionButton2, @NonNull LinearLayout loadingContainer,
+      @NonNull ProgressBar progressBar, @NonNull RecyclerView recyclerViewTask,
+      @NonNull TextView textInfo) {
     this.rootView = rootView;
     this.floatingActionButton2 = floatingActionButton2;
+    this.loadingContainer = loadingContainer;
+    this.progressBar = progressBar;
     this.recyclerViewTask = recyclerViewTask;
+    this.textInfo = textInfo;
   }
 
   @Override
@@ -66,14 +83,32 @@ public final class FragmentDoneBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.loadingContainer;
+      LinearLayout loadingContainer = ViewBindings.findChildViewById(rootView, id);
+      if (loadingContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerViewTask;
       RecyclerView recyclerViewTask = ViewBindings.findChildViewById(rootView, id);
       if (recyclerViewTask == null) {
         break missingId;
       }
 
+      id = R.id.textInfo;
+      TextView textInfo = ViewBindings.findChildViewById(rootView, id);
+      if (textInfo == null) {
+        break missingId;
+      }
+
       return new FragmentDoneBinding((ConstraintLayout) rootView, floatingActionButton2,
-          recyclerViewTask);
+          loadingContainer, progressBar, recyclerViewTask, textInfo);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
